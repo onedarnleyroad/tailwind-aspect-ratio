@@ -1,6 +1,6 @@
 # tailwind-aspect-ratio
 
-Aspect Ratio plugin for tailwind.
+Aspect Ratio plugin for tailwind. Generate a series of intrinsic aspect ratio containers. 
 
 ## Usage:
 
