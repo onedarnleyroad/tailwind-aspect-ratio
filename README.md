@@ -113,3 +113,7 @@ One settings-less style is generated. `.ar-base` will be added, so that you can 
 ```
 <div class="ar-base" style="padding-bottom: 56.25%"> ... </div>
 ```
+
+## Suggestions / Todo
+
+- Maybe we could add some config for the base style, i.e. adding `position:relative` is done because you're almost certainly going to put an absolute container in there. You're most likely to going to want to fill a container by 100% rather than have the aspect-ratio container be a percentage width itself (because then padding-bottom becomes tiresome). But hey, a project might want some differences to the 'base' and we could pass in a config for that....
