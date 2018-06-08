@@ -25,7 +25,7 @@ modules {
 }
 ```
 
-And add config to tailwind.js like so:
+And add config to tailwind.js like so...(omit these and all you will get is ar-base)
 
 ```
 module.exports = {
@@ -44,6 +44,28 @@ module.exports = {
 	// ...
 
 }
+```
+
+Then if you like, change things with the tailwind options:
+
+```
+options: {
+    prefix: '',
+    important: false,
+    separator: ':',
+    
+    // These are optional:
+    aspectRatio: {
+      // change the utility name. So instead of `.ar-2x3` you could have `.aspectRatio-2x3`
+      prefix: '.ar-',
+
+      // by default, it will add height 0, width 100%, position: relative and overlow:hidden.
+      // but set paddingOnly and it will _only_ show the padding-bottom values. 
+      // .ar-base will _still be created so you can do, for example, `ar-2x3 ar-base` for a complete application,
+      // thus reducing a bit of repetition. Up to you!
+      paddingOnly: false
+    }
+  },
 ```
 
 Note that the aspect ratio settings just expect a number between 0 and 1. I've inverted this from the actual ratio so for a 16:9 ratio instead of supplying `0.5625` to become `56.25%` you actually supply `1.7777777778`
