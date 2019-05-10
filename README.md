@@ -31,7 +31,18 @@ And add config to tailwind.js like so...(omit these and all you will get is ar-b
 module.exports = {
 
 	// ...
-
+	
+	/*
+	|-----------------------------------------------------------------------------
+	| Aspect Ratio         https://github.com/onedarnleyroad/tailwind-aspect-ratio
+	|-----------------------------------------------------------------------------
+	|
+	| Generate a series of intrinsic aspect ratio containers.
+	|
+	| Class name: .ar-{name}
+	| CSS property: mixed
+	|
+	*/
 	
 	aspectRatio: {
 		'3x2': 3/2,
